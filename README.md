@@ -18,4 +18,5 @@ docker exec -it workato bash
     `
    workato version
    `
-11. Now you can develop your connector remotely with Visual Studio Code.
+11. Now connect the Visual Studio Code on Windows machine to the Docker container<br>
+    ![VSCode Screenshot](https://raw.githubusercontent.com/jedipi/Workato-Connector-SDK-Docker/refs/heads/main/img.png)
