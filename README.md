@@ -14,7 +14,8 @@ docker compose up -d
 docker exec -it workato bash
 `
 8. You can now run Linux commands inside the container as if you were logged into a separate machine
-9. Try workato command
+9. Try workato command below, and you should be see SDK version number
     `
-   workato help
+   workato version
    `
+11. Now you can develop your connector remotely with Visual Studio Code.
