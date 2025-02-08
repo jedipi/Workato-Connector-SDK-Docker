@@ -5,11 +5,11 @@ A quick guid for for setting up the Workato connector development environment wi
 2. Install Docker desktop for Windows. [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 3. Open the Terminal once your WSL 2 and Docker is ready.
 4. Download the **docker-compose.yml** file and save it to your destination folder in WSL
-6. Run the command to start the container.
+6. Run the command to start the container.<br>
 `
 docker compose up -d
 `
-7. Runs Bash shell inside the container
+7. Runs Bash shell inside the container<br>
 `
 docker exec -it workato bash
 `
