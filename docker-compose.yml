@@ -1,0 +1,15 @@
+services:
+  workato-connector-sdk:
+    image: forjedi/workato-connector-sdk:latest
+    container_name: workato
+    environment:
+      WORKATO_BASE_URL: "your-environment-url"
+      WORKATO_API_TOKEN: "your-api-client-token"
+    volumes:
+      - .:/usr/src/connector
+    working_dir: /usr/src/connector
+    command: ["sleep","infinity"]  # Keep container running
+    tty: true
+    ports:
+      - "22:22"
+    network_mode: bridge 
