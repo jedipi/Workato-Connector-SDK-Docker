@@ -5,22 +5,23 @@ A quick guid for for setting up the Workato connector development environment wi
 2. Install Docker desktop for Windows. [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 3. Open the Terminal once your WSL 2 and Docker is ready.
 4. Download the **docker-compose.yml** file and save it to your destination folder in WSL <br>
-`
-wget https://raw.githubusercontent.com/jedipi/Workato-Connector-SDK-Docker/refs/heads/main/docker-compose.yml
-`
-5. Run the command to start the container.<br>
+<code>wget https://raw.githubusercontent.com/jedipi/Workato-Connector-SDK-Docker/refs/heads/main/docker-compose.yml</code>
+5. Edit the **docker-compose.yml** and update the environment variables .<br>
+<code>WORKATO_BASE_URL: "your-environment-url"
+WORKATO_API_TOKEN: "your-api-client-token"</code>
+6. Run the command to start the container.<br>
 `
 docker compose up -d
 `
-6. Runs Bash shell inside the container<br>
+7. Runs Bash shell inside the container<br>
 `
 docker exec -it workato bash
 `
 
-7. You can now run Linux commands inside the container as if you were logged into a separate machine
-8. Try workato command below, and you should be see SDK version number<br>
+8. You can now run Linux commands inside the container as if you were logged into a separate machine
+9. Try workato command below, and you should be see SDK version number<br>
  `
    workato version
    `
-9. Now you can connect the Visual Studio Code on Windows machine to the Docker container<br>
+10. Now you can connect the Visual Studio Code on Windows machine to the Docker container<br>
     ![VSCode Screenshot](https://raw.githubusercontent.com/jedipi/Workato-Connector-SDK-Docker/refs/heads/main/img.png)
