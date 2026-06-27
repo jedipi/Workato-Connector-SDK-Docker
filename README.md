@@ -1,5 +1,5 @@
 # Workato-Connector-SDK-Docker
-A quick guid for for setting up the Workato connector development environment with docker on Windos.
+A quick guid for for setting up the Workato connector development environment with docker on Windows.
 
 1. Turn on the WSL 2 feature on Windows. For detailed instructions, refer to the [Microsoft documentation](https://learn.microsoft.com/en-us/windows/wsl/install)
 2. Install Docker desktop for Windows. [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
